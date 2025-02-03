@@ -1,18 +1,10 @@
-import { Button } from "@/components/ui/button";
-import { Slider } from "@/components/ui/slider";
 import React from "react";
+import { bgImageUrl } from "@/components/data/data";
+import Navbar from "@/components/navbar";
 
 const Home = () => {
   return (
-    <div>
-      <div className="py-4 bg-red-600">
-        {" "}
-        <h2 className="">Home page</h2>
-      </div>
-
-      <Button>Home</Button>
-      <Slider defaultValue={[20]} max={100} step={1} />
-    </div>
+    <div className="flex justify-center w-full items-center">home page</div>
   );
 };
 
