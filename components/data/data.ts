@@ -1,26 +1,23 @@
-export const bgImageUrl: string =
-  "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-// export const bgImageUrl: string ="https://plus.unsplash.com/premium_photo-1670963025018-27dd11a9b0ce?q=80&w=1906&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+export const skills = [
+  { name: "React", level: 90 },
+  { name: "Next.js", level: 85 },
+  { name: "TypeScript", level: 80 },
+  { name: "Node.js", level: 75 },
+  { name: "Tailwind CSS", level: 95 },
+  { name: "MySql", level: 30 },
+  { name: "MongoDB", level: 70 },
+  { name: "AWS", level: 30 },
+];
 
-// interface NavItem {
-//   id: number;
-//   title: string;
-//   path: string;
-// }
+export const details = [
+  "Based in  Texas, Houston",
+  "Bachelor Degree in management  from Balkumari College, Nepal",
+  "Good in English and little bit in Spanish",
+  "Fluent in Nepali, Hindi, Urdu and Korean",
+  "Love for trekking and  photography",
+  "Passionate about cooking",
+  "Enjoys working with repairing tools",
+];
 
-// export const navBar: NavItem[] = [
-//   { id: 1, title: "Home", path: "/" },
-//   { id: 2, title: "About", path: "about" },
-//   { id: 3, title: "Projects", path: "projects" },
-//   { id: 4, title: "Skills", path: "/about/skills" },
-//   { id: 5, title: "Resume", path: "resume" },
-//   { id: 6, title: "Contact", path: "contact" },
-//   { id: 7, title: "GitHub", path: "github" },
-//   { id: 8, title: "Linkedin", path: "linkedin" },
-// ];
-
-interface NavItem {
-  label: string;
-  href?: string; // Optional for dropdowns
-  subItems?: NavItem[]; // Sub-items for dropdowns
-}
+export const aboutMe =
+  " Hello! I'm Raj Maharjan, an aspiring web developer passionate about creating engaging and user-friendly digital experiences. As a new comer to the field, I'm excited to apply my fresh perspective and eagerness to learn in developing beautiful and functional websites. I'm constantly exploring new technologies and best practices to growmy skills and deliver innovative solutions.";

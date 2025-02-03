@@ -10,7 +10,7 @@ import { MobileNav } from "@/components/mobile-nav";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Alex Smith - Portfolio",
+  title: "Raj Maharjan - Portfolio",
   description: "Personal portfolio website",
 };
 

@@ -23,7 +23,7 @@ export default function Home() {
         }}
       />
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white px-4">
-        <h1 className="text-6xl font-bold mb-4">Raj Maharjan</h1>
+        <h1 className="text-6xl font-bold text-center mb-4">Raj Maharjan</h1>
         <p className="text-2xl">
           I&apos;m {text.substring(0, index)}
           <span className="animate-pulse">|</span>
