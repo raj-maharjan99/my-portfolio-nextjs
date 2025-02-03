@@ -22,11 +22,11 @@ const menuItems = [
 
 export default function Sidebar() {
   return (
-    <aside className="fixed h-full w-64 bg-[#0d1117] text-white p-6 flex flex-col">
+    <aside className=" w-full h-full  bg-[#08081e] text-white p-6 flex flex-col">
       <div className="flex flex-col items-center mb-8">
         <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
           <Image
-            src="/profileImage.jpg"
+            src="/profile-pic.png"
             alt="Profile"
             width={96}
             height={96}
