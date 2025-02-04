@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [text, setText] = useState("Full Stack Developer");
+  const text = "Full Stack Developer";
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

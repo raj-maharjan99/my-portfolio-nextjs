@@ -6,7 +6,7 @@ export default function NotFoundPage() {
     <div className="h-screen flex flex-col justify-center items-center text-center">
       <h1 className="text-4xl font-bold text-red-500">404 - Page Not Found</h1>
       <p className="text-gray-600 mt-2">
-        Oops! The page you're looking for doesn't exist.
+        Oops! The page you are looking for doesn not exist.
       </p>
       <Link
         href="/"

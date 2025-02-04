@@ -1,26 +1,15 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  BookOpen,
-  ChevronDown,
-} from "lucide-react";
-import { BsTwitterX } from "react-icons/bs";
-import { FaBookOpen, FaFacebook, FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
+import { ChevronDown } from "lucide-react";
 
-const menuItems = [
-  { href: "/", label: "Home", icon: "🏠" },
-  { href: "/about", label: "About", icon: "👤" },
-  { href: "/resume", label: "Resume", icon: "📄" },
-  { href: "/portfolio", label: "Portfolio", icon: "💼" },
-  { href: "/services", label: "Services", icon: "🛠" },
-];
+import { iconBar, menuItems } from "./data/data";
 
-export default function Sidebar() {
+interface SidebarProps {
+  onLinkClick?: () => void;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ onLinkClick }) => {
   return (
     <aside className=" w-full  h-full  bg-[#08081e]  text-white p-6 flex flex-col">
       <div className="flex flex-col items-center mb-8">
@@ -37,21 +26,11 @@ export default function Sidebar() {
       </div>
 
       <div className="flex justify-center gap-3 mb-8">
-        <Link href="#" className="hover:text-gray-400">
-          <BsTwitterX size={20} />
-        </Link>
-        <Link href="#" className="hover:text-gray-400">
-          <FaFacebook size={20} />
-        </Link>
-        <Link href="#" className="hover:text-gray-400">
-          <FaInstagram size={20} />
-        </Link>
-        <Link href="#" className="hover:text-gray-400">
-          <FaBookOpen size={20} />
-        </Link>
-        <Link href="#" className="hover:text-gray-400">
-          <FaLinkedin size={20} />
-        </Link>
+        {iconBar.map((icon, index) => (
+          <Link key={index} href={icon.href} className={icon.className}>
+            {icon.icon}
+          </Link>
+        ))}
       </div>
 
       <nav className="flex-1">
@@ -59,6 +38,7 @@ export default function Sidebar() {
           {menuItems.map((item) => (
             <li key={item.label}>
               <Link
+                onClick={onLinkClick}
                 href={item.href}
                 className="flex items-center gap-3 px-4 py-2 rounded hover:bg-gray-800"
               >
@@ -78,4 +58,6 @@ export default function Sidebar() {
       </nav>
     </aside>
   );
-}
+};
+
+export default Sidebar;
