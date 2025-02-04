@@ -42,7 +42,7 @@ export default function AboutPage() {
             className="relative overflow-hidden rounded-lg"
           >
             <Image
-              src="/raj.jpg"
+              src="/bg_pic.jpg"
               alt="Raj Maharjan"
               width={1000}
               height={1000}

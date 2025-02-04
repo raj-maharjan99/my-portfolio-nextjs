@@ -33,10 +33,11 @@ export const aboutMe =
 // side bar
 export const menuItems = [
   { href: "/", label: "Home", icon: "🏠" },
-  { href: "/about", label: "About", icon: "👤" },
+  { href: "/about", label: "About", icon: "👨" },
   { href: "/resume", label: "Resume", icon: "📄" },
-  { href: "/portfolio", label: "Portfolio", icon: "💼" },
-  { href: "/services", label: "Services", icon: "🛠" },
+  { href: "/projects", label: "Projects", icon: "💼" },
+  { href: "/contact", label: "Contact", icon: "📞" },
+  { href: "/game", label: "Play Game", icon: "🃏" },
 ];
 
 //
@@ -71,4 +72,40 @@ export const iconBar: Icon[] = [
     icon: <FaLinkedin size={20} />,
     className: "hover:text-gray-400",
   },
+];
+
+// My projects
+export const projects = [
+  {
+    title: "Banking Application",
+    description: "A full-stack banking portal built with the MERN stack.",
+    image: "/placeholder.svg?height=200&width=300",
+    link: "https://github.com/raj-maharjan99",
+  },
+  {
+    title: "Movie Search ",
+    description: "A movie search platform using MERN stack and external API.",
+    image: "/placeholder.svg?height=200&width=300",
+    link: "https://github.com/raj-maharjan99",
+  },
+  {
+    title: "Game",
+    description: " A small  game built with the Next js.",
+    image: "/placeholder.svg?height=200&width=300",
+    link: "/game",
+  },
+  {
+    title: "Calculator",
+    description: "A Basic Calculator using MERN stack.",
+    image: "/placeholder.svg?height=200&width=300",
+    link: "https://github.com/raj-maharjan99",
+  },
+];
+
+// game
+export const gameArray = [
+  ["🦹🏻‍♂️", "👨🏻‍🚒", "🥷🏼"],
+  ["👰🏻‍♀️", "🧑🏻‍🏭", "👼🏻"],
+  ["🦹🏻‍♂️", "👼🏻", "👨🏻‍🚒"],
+  ["🥷🏼", "🧑🏻‍🏭", "👰🏻‍♀️"],
 ];

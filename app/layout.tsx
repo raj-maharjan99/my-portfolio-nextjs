@@ -6,6 +6,7 @@ import "./globals.css";
 import type React from "react"; // Added import for React
 import Sidebar from "@/components/side-bar";
 import { MobileNav } from "@/components/mobile-nav";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,10 @@ export default function RootLayout({
             <Sidebar />
           </div>
           <MobileNav />
-          <main className="flex-1">{children}</main>
+          <div className="flex-1 flex flex-col">
+            <main className="">{children}</main>
+            <Footer />
+          </div>
         </div>
       </body>
     </html>

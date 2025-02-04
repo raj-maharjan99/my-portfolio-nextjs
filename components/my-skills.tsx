@@ -10,7 +10,7 @@ export default function MySkills() {
       transition={{ duration: 0.5, delay: 0.4 }}
       className="flex flex-col gap-8"
     >
-      <p className="text-xl  sm:mt-4 mb-6 font-mono  font-semibold leading-relaxed text-gray-700 dark:text-gray-300">
+      <p className="text-xl  sm:mt-4 mb-6 font-sans  leading-relaxed text-gray-700 dark:text-gray-300">
         {aboutMe}
       </p>
 

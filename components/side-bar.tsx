@@ -15,7 +15,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onLinkClick }) => {
       <div className="flex flex-col items-center mb-8">
         <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
           <Image
-            src="/profile-pic.png"
+            src="/profile_pic.jpg"
             alt="Profile"
             width={96}
             height={96}
