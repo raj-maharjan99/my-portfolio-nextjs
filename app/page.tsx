@@ -2,15 +2,17 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Home() {
   const text = "Full Stack Developer";
-  const [index, setIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const currentIndex = useRef(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setIndex((i) => (i + 1) % (text.length + 1));
+      setDisplayedText(text.substring(0, currentIndex.current));
+      currentIndex.current = (currentIndex.current + 1) % (text.length + 1);
     }, 200);
 
     return () => clearInterval(timer);
@@ -36,7 +38,13 @@ export default function Home() {
             </h1>
           </motion.div>
 
-          <h2 className="text-2xl mb-8">Web Developer</h2>
+          <div className="h-[3rem] mb-8">
+            {" "}
+            {/* Fixed height to prevent CLS */}
+            <h2 className="text-2xl transition-none">{displayedText}</h2>
+            {/* transition-none to stop default transitions */}
+          </div>
+
           <p className="mb-8 max-w-2xl mx-auto">
             Passionate web developer with experience in creating responsive and
             interactive websites. Skilled in HTML, CSS, JavaScript, React.js,

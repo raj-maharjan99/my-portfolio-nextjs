@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="container mx-auto px-6 my-10 ">
+    <div className="container mx-auto px-6 mt-20 ">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -62,6 +62,7 @@ const Contact = () => {
           Send Message
         </button>
       </form>
+      <div className="w-full h-52"></div>
     </div>
   );
 };
